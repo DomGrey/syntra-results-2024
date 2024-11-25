@@ -4,15 +4,18 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite --open --host",
-    "build" : "vite build",
-    "preview" : "vite preview --open --host",
-"deploy-main": "surge ./dist 2211blabla.surge.sh",
-"postdeploy-main": "start chrome https://2211blabla.surge.sh",
-"deploy-develop": "surge ./dist 2211blabla-test.surge.sh",
-"postdeploy-develop": "start chrome https://2211blabla-test.surge.sh"
+    "build": "vite build",
+    "preview": "vite preview --open --host",
+    "deploy-main": "surge ./dist 2211blabla.surge.sh",
+    "postdeploy-main": "start chrome https://2211blabla.surge.sh",
+    "deploy-develop": "surge ./dist 2211blabla-test.surge.sh",
+    "postdeploy-develop": "start chrome https://2211blabla-test.surge.sh"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "canvas-confetti": "^1.9.3"
+  }
 }

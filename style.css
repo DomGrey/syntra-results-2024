@@ -1,6 +1,6 @@
 @import url(https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:opsz,wght@14..32,100..900&display=swap");
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 :root {
   font-size: 62.5%;
   --LightSlateBlue: hsl(252, 100%, 67%);
@@ -19,7 +19,13 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  overflow: hidden;
+  min-height: 100vh;
+}
+canvas {
+  pointer-events: none;
+}
 main {
   display: grid;
   font-family: "Hanken Grotesk", sans-serif;
@@ -56,6 +62,11 @@ main {
           var(--VioletBlue),
           var(--PersianBlue)
         );
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-name: bounceIn;
+        animation-duration: 500ms;
+        animation-delay: 500ms;
 
         h3 {
           font-size: 15vw;
@@ -79,6 +90,11 @@ main {
         margin: 1rem auto;
         line-height: 2.1rem;
       }
+      h2,
+      p {
+        animation-name: fadeInDown;
+        animation-duration: 500ms;
+      }
     }
 
     &:nth-child(2) {
@@ -98,6 +114,10 @@ main {
           gap: 1.5rem;
           padding: 2rem;
           border-radius: 1rem;
+          opacity: 0;
+          animation-fill-mode: forwards;
+          animation-name: fadeInRight;
+          animation-duration: 500ms;
 
           p {
             &:nth-of-type(1) {
@@ -134,6 +154,7 @@ main {
               var(--OrangeyYellow) 10%,
               transparent
             );
+            animation-delay: 200ms;
 
             p:first-of-type {
               color: var(--OrangeyYellow);
@@ -146,6 +167,7 @@ main {
               var(--GreenTeal) 10%,
               transparent
             );
+            animation-delay: 400ms;
 
             p:first-of-type {
               color: var(--GreenTeal);
@@ -158,6 +180,7 @@ main {
               var(--CobaltBlue) 10%,
               transparent
             );
+            animation-delay: 600ms;
 
             p:first-of-type {
               color: var(--CobaltBlue);
