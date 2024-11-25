@@ -4,10 +4,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite --open --host",
-    "build": "vite build",
-"preview":"vite preview --open --host",
+    "build" : "vite build",
+    "preview" : "vite preview --open --host",
 "deploy": "surge ./dist 2211blabla.surge.sh",
-"postdeploy": "open chrome https://www.2211blabla.surge.sh"
+"postdeploy": "open chrome https://2211blabla.surge.sh"
   },
   "keywords": [],
   "author": "",
